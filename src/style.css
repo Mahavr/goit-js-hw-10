@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+ul,
+ol {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+li {
+  list-style: none;
+}
+img {
+  display: block;
+  width: 500px;
+}
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  display: none;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+body {
+  background-color: rgba(115, 96, 91, 0.973);
+}
+/*
+  |============================
+  | select
+  |============================
+*/
+.breed-select {
+  background-color: rgba(207, 149, 129, 0.816);
+  border: 2px solid #2d4262;
+  color: #2d4262;
+  width: 300px;
+}
+.ss-main .ss-values .ss-placeholder {
+  color: #2d4262c8;
+}
+.ss-content .ss-list .ss-option {
+  color: #2d4262;
+}
+.ss-content .ss-list .ss-option:hover,
+.ss-content .ss-list .ss-option.ss-highlighted,
+.ss-content .ss-list .ss-option:not(.ss-disabled).ss-selected {
+  background-color: #2d4262;
+  color: #d09683;
+}
+/*
+  |============================
+  | cat info
+  |============================
+*/
+
+.cat-info {
+  display: flex;
+
+  margin-top: 10px;
+}
+.description-wrapper {
+  display: flex;
+  width: 600px;
+  margin-left: 10px;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+.cat-breed {
+  color: #363237;
+  font-size: 50px;
+}
+
+.temperament {
+  color: #102a49;
+  font-size: 19px;
+}
+.description {
+  color: #363237;
+  margin-top: 20px;
+  font-size: 15px;
+}

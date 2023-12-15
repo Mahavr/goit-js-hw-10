@@ -61,12 +61,18 @@ body {
 .ss-main .ss-values .ss-placeholder {
   color: #2d4262c8;
 }
-.ss-content .ss-list .ss-option {
+.ss-content .ss-list .ss-option > option {
   color: #2d4262;
 }
-.ss-content .ss-list .ss-option:hover,
+/* .ss-content .ss-list .ss-option:hover,
 .ss-content .ss-list .ss-option.ss-highlighted,
 .ss-content .ss-list .ss-option:not(.ss-disabled).ss-selected {
+  background-color: #2d4262;
+  color: #d09683;
+} */
+.ss-content .ss-list .ss-option:hover,
+.ss-content .ss-list .ss-option.ss-highlighted,
+.ss-content .ss-list .ss-option:not(.ss-disabled).ss-selected > option {
   background-color: #2d4262;
   color: #d09683;
 }

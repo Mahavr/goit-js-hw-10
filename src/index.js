@@ -51,7 +51,10 @@ function onError() {
 fetchBreeds()
   .then(resp => {
     const breedMarkup = resp
-      .map(({ id, name }) => `<option  value="${id}"> ${name} </option>`)
+      .map(
+        ({ id, name }) =>
+          `<option style="{color: #2d4262}"  value="${id}"> ${name} </option>`
+      )
       .join('');
 
     select.insertAdjacentHTML('beforeend', breedMarkup);
@@ -62,6 +65,7 @@ fetchBreeds()
     Loading.remove();
     new SlimSelect({
       select: '#breed-select',
+      selectClass: '.breed-select',
       settings: {
         placeholderText: 'Select cat breed',
       },
@@ -85,8 +89,8 @@ const onChange = evt => {
         <div class="description-wrapper">
           <h2 class="cat-breed">${breeds[0].name}</h2>
           <ul class="description-list">
-            <li class="temperament">${breeds[0].temperament}</li>
-            <li class="description">${breeds[0].description}</li>
+            <li class="temperament"><p>${breeds[0].temperament}</p></li>
+            <li class="description"><p>${breeds[0].description}</p></li>
           </ul>
         </div>
 `;
